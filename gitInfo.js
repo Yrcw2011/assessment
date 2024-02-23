@@ -10,6 +10,8 @@
 */
 
 //CODE HERE
+ let gitDefinition = 'Allows multiple people to code on a single project,'
+  console.log('git')
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,7 +20,8 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = 'GitHub is a app allowing for coders to store saved repositorys'
+  console.log('gitHub')
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,7 +29,8 @@
 */
 
 //CODE HERE
-
+let gitinitDefinition = 'Creates a new respository so you can add information'
+  console.log('gitinit')
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -34,7 +38,8 @@
 */
 
 //CODE HERE
-
+let gitCloneDefinition = 'Allows you to connect a url to your repository'
+  console.log('clone')
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,7 +47,8 @@
 */
 
 //CODE HERE
-
+let = getStatusDefinition = "Allows you to see what if any changes have been made to your repository"
+  console.log('status')
 //////////////////PROBLEM 6////////////////////
 /*
     Create a variable called 'gitAddDefinition'.  
@@ -53,7 +59,10 @@
 */
 
 //CODE HERE
-
+let gitAddDefinition = 'Tells git to prepare every updated file in this current folder and all other folders as well. '
+  console.log('add')
+let gitAddCode = ('Adds changes in the working directory to the staging area')
+  console.log('AddCode')
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -64,7 +73,10 @@
 */
 
 //CODE HERE
-
+let gitCommitDefinition = ('Creates snapshots along the timeline of the coding process')
+  console.log('Commit')
+let gitCommitCode = ('A shortcut command that immediately creates a commit with a passed commit message.')
+  console.log('initial commit')
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +85,9 @@
 */
 
 //CODE HERE
+let gitPushDefinition = ('Is used to transfer files from your local repository to that of a remote')
+  console.log('git push')
+
+
+
+
