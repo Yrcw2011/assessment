@@ -46,13 +46,16 @@ const pinkPrice = .55
     Save the number to a variable called 
     `totalAcres`.
 
-    Log `totalAcres` to the console.
-*/
+    Log `totalAcres` to the console.*/
+//Problem 
+//code Here
 
-// CODE HERE
-
-
-
+fujiAcres [2, 3, 3, 2, 2, 2, 1]
+sum = 0
+for (let num in fujiAcres) {
+    sum+=n
+}
+    console.log('sum')
 
 
 // PROBLEM 2
