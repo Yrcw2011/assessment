@@ -4,9 +4,10 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
-//colorCopy = faveColors.slice('0', '2') {
-  //console.log('should be correct')
-//}
+var faveColors = ['red', 'green', 'black'] ;
+var faveColors2 = colorCopy.slice();
+console.log(arr === arr2);
+
  
 
 
@@ -56,6 +57,5 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
 answers = []
-for (let ) {
-  console.log('i');
-}
+for (let) {
+  console.log('i');}

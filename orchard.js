@@ -35,29 +35,48 @@ const fujiPrice = .89
 const galaPrice = .64
 const pinkPrice = .55
 
-
-
-// PROBLEM 1
-
+ 
 /*
+    PROBLEM 1
+
     Using for loop, calculate the total number
     of acres picked for the entire week.
 
     Save the number to a variable called 
     `totalAcres`.
 
-    Log `totalAcres` to the console.*/
-//Problem 
-//code Here
+    Log `totalAcres` to the console.
+*/
 
-fujiAcres [2, 3, 3, 2, 2, 2, 1]
-sum = 0
-for (let num in fujiAcres) {
-    sum+=n
-}
-    console.log('sum')
+// Call function three times. Once for each array. Function returns total acres for the given array
+let result1 = getTotalAcres (fujiAcres);
+let result2 = getTotalAcres (galaAcres);
+let result3 = getTotalAcres (pinkAcres);
 
+// Print results to Debug Window
+console.clear();
+console.log("Total Acres Per Array");
+console.log(result1);
+console.log(result2);
+console.log(result3);
 
+  // Get the total for all three arrays
+  const totalAcres = result1 + result2 + result3;
+  console.log(totalAcres);
+
+  // Function to sum the acres
+  function getTotalAcres (acres) 
+  {
+    let total = 0;
+    for (let index = 0; index < acres.length; index++)
+    {
+        total += acres[index];
+    }
+
+    return total;
+  } 
+
+    
 // PROBLEM 2
 
 /*
@@ -71,11 +90,12 @@ for (let num in fujiAcres) {
 */
 
 // CODE HERE
-
-
-
-
-
+// 
+// This is the average per day for all arrays
+let averageDailyAcres = totalAcres / fujiAcres.length;
+console.log("Average Daily Acres: " + averageDailyAcres);
+console.log("");
+  
 // PROBLEM 3
 
 /*
@@ -108,9 +128,17 @@ for (let num in fujiAcres) {
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
+// Write a while loop acresleft above 0
+// increase the number by 1 on each iteration and subtrack from average left
+// log days to the console
 
-
+while (acresLeft > 0)
+{
+    acresLeft -= averageDailyAcres;
+    days++;
+    console.log("Days Left: " + days);
+}
+console.log("");
 
 // PROBLEM 4
 
@@ -136,15 +164,36 @@ let days = 0
     values to the new arrays.
 */
 
+// 3 arrays that list daily amount apples in ton
+// each acre yields 6.5 tons
+// use variable below to store new arrays 
+// log each to console
+// you can use the slice method to copy the arrays
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
 
+let fujiTons  = getPickedTons(fujiAcres);
+let galaTons  = getPickedTons(galaAcres);
+let pinkTons  = getPickedTons(pinkAcres);
 
+function getPickedTons (acres) {
+    
+    const tons = [];
+    
+    for (let index = 0; index < acres.length; index++) {
+    
+        let result = acres[index] * 6.5;
+        tons[index] = result;
+    }
 
+    return tons;
+}
 
+console.log("Tons Picked");
+
+console.log("Tons Fuji Picked: " + fujiTons);
+console.log("Tons Gala Picked: " + galaTons);
+console.log("Tons Pink Picked: " + pinkTons);
 
 
 // PROBLEM 5
@@ -165,14 +214,25 @@ let days = 0
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = getPounds(fujiTons);
+let galaPounds = getPounds(galaTons);
+let pinkPounds = getPounds(pinkTons);
+ 
+  function getPounds (tons) 
+  {
+    let pounds = 0;
 
+    for (let index = 0; index < tons.length; index++) 
+    {
+      pounds += (tons[index] * 2000);
+    }
+    return pounds;
+}
 
-
-
-
+console.log("Pounds");
+console.log(fujiPounds + " Fuji Pounds");
+console.log(galaPounds + " Gala Pounds");
+console.log(pinkPounds + " Pink Pounds");
 
 // PROBLEM 6
 
@@ -188,18 +248,19 @@ let days = 0
 
     Log each of the profits to the 
     console. 
-*/
-
-// CODE HERE
-
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+  */
 
 
+  let fujiProfit = fujiPounds * fujiPrice;
+  let galaProfit = galaPounds * galaPrice
+  let pinkProfit = pinkPounds * pinkPrice
 
+  console.log("");
+  console.log("Profits");
 
-
+  console.log(fujiProfit);
+  console.log(galaProfit);
+  console.log(pinkProfit);
 
 // PROBLEM 7
 
@@ -209,6 +270,9 @@ let days = 0
     `totalProfit`.
 
     Log `totalProfit` to the console.
-*/
+*/ 
+let totalProfit = (fujiProfit + galaProfit + pinkProfit);
+console.log("Total Profit");
+console.log(totalProfit);
 
 // CODE HERE
