@@ -12,8 +12,7 @@ let faveNum = 50
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
-if (lovesCode(true))
-console.log('I am correct');
+let lovesCode = true
 //////////////////PROBLEM 4////////////////////
 /*
   Write an if-statement that checks if the faveNum variable is 
@@ -22,11 +21,20 @@ console.log('I am correct');
 */
 
 //CODE HERE
-if (favNum(50))
-console.log()
+if (faveNum === 13) {
+  
+  console.log('lucky 13');
+  
+} else {
+  console.log('not lucky 13');
+} 
 //////////////////PROBLEM 5////////////////////
 /*
   Write a for loop that prints out your faveNum 5 times.
 */
 
 //CODE HERE
+
+for (let i = 0; i < 5; i++) {
+  console.log(faveNum);
+}
